@@ -1,0 +1,124 @@
+.flex-container {
+    display: flex; 
+    margin: -10px;
+    margin-bottom: 10px;
+    background-color: #0A66C2;
+}
+img[src="logo.png"]{
+    height: 50px;
+    width: 40px;
+    padding: 10px;
+    color: white;
+    margin-left: 80px;
+}
+img{
+    transition-duration: 0.8s;
+}
+img:hover{
+    transform: rotate(360deg);
+} 
+div[class = "item"] {
+    color: white;
+    font-weight: bold;
+    padding-top: 25px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+body {
+    margin:0;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+    background-color: #f5f5eaef;
+}
+nav {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: rgb(173, 173, 173) solid 1px;
+    margin-bottom: 20px;
+}
+button:hover {
+    background-color: #004182; 
+}
+button{
+    background: #0A66C2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+} 
+#delete-btn {
+    background-color: white;
+    color: #0A66C2;
+    border: #0A66C2 solid 1px;
+    cursor: pointer;
+}
+#delete-btn:hover{
+    background-color: #aad6ff;
+    box-sizing: border-box;
+    outline: #0A66C2 1px solid;
+
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.list{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: rgb(173, 173, 173) solid 1px;
+}
+.class0 img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    
+}
+.class2::before {
+    content: "Postion*";
+    font-weight: bold;
+    color: rgb(91, 91, 91);
+
+}
+.class3::before {
+    content: "Company*";
+    font-weight: bold;
+    color: rgb(91, 91, 91);
+
+}
+.class4::before {
+    content: "Job-Type*";
+    font-weight: bold;
+    color: rgb(91, 91, 91);
+
+}
+.class5::before {
+    content: "Applicants* ";
+    font-weight: bold;
+    color: rgb(91, 91, 91);
+    display: inline-block;
+    background: url('profile.png') no-repeat center center;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+input[readonly] {
+    color: inherit; 
+    outline: none; 
+    cursor: default;
+    padding: 3px;
+    width: 100%;
+    display: flex;
+    border: rgb(173, 173, 173) solid 1px;
+    border-radius: 5px;
+}
