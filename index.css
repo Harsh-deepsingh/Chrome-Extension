@@ -14,9 +14,9 @@ img[src="logo.png"]{
 img{
     transition-duration: 0.8s;
 }
-img:hover{
+/* img:hover{
     transform: rotate(360deg);
-} 
+}  */
 div[class = "item"] {
     color: white;
     font-weight: bold;
@@ -65,53 +65,45 @@ button{
 }
 ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 2px;
 }
 li{
     list-style-type: none;
     padding-left: 0px;
     margin-top: 10px;
 }
-.list{
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: rgb(173, 173, 173) solid 1px;
-}
-.class0 img{
+
+.linklogo img {
     width: 20px;
     height: 20px;
     margin-top: 0px;
     
 }
-.class2::before {
+/*.class2::before {
     content: "Postion*";
     font-weight: bold;
     color: rgb(91, 91, 91);
-
+    
 }
 .class3::before {
     content: "Company*";
     font-weight: bold;
     color: rgb(91, 91, 91);
-
-}
-.class4::before {
+    
+} */
+/* .class4::before {
     content: "Job-Type*";
     font-weight: bold;
     color: rgb(91, 91, 91);
-
-}
-.class5::before {
+    
+} */
+/* .class4::before {
     content: "Applicants* ";
     font-weight: bold;
     color: rgb(91, 91, 91);
     display: inline-block;
-    background: url('profile.png') no-repeat center center;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
+    
+} */
 input[readonly] {
     color: inherit; 
     outline: none; 
@@ -122,3 +114,40 @@ input[readonly] {
     border: rgb(173, 173, 173) solid 1px;
     border-radius: 5px;
 }
+.temp {
+    font-weight: bold;
+    color: rgb(91, 91, 91)
+}
+
+.list{
+    background-color: white;
+    border-left: rgb(173, 173, 173) solid 1px;
+    border-right: rgb(173, 173, 173) solid 1px;
+    padding: 10px;
+    margin-top: -10px;
+}
+.list2{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-left: rgb(173, 173, 173) solid 1px;
+    border-right: rgb(173, 173, 173) solid 1px;
+    border-bottom: rgb(173, 173, 173) solid 1px; */
+    border: rgb(173, 173, 173) solid 1px;
+    border-top: white;
+    padding: 10px;
+    margin-top: -10px;
+    
+}
+
+.list1{
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: rgb(173, 173, 173) solid 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
