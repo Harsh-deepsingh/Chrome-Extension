@@ -99,11 +99,11 @@ function render(leads) {
                     <div class="list1">
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                                 </div>   
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -125,11 +125,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                           
                         </div>
                     </li>
                     </div>
@@ -151,11 +151,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                           
                         </div>
                     </li>
                     </div>
@@ -178,11 +178,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                           
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -205,11 +205,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -232,11 +232,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                           
                         </div>
                     </li>
                     </div>
@@ -259,11 +259,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -286,11 +286,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                           
                         </div>
                     </li>
                     </div>
@@ -313,11 +313,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -340,11 +340,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                          
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                           
                         </div>
                     </li>
                     </div>
@@ -367,11 +367,11 @@ function render(leads) {
                     <div class='list1'>
                     <li>
                         <div class='${itemClass}'>
-                            <a target='_blank' href='${myLeads}'>
+                            
                             <div class='linklogo'>
                                 <img src='icon.jpg' alt='Icon' width='50' height='50'>
                             </div>    
-                            </a>
+                            
                         </div>
                     </li>
                     </div>
@@ -997,32 +997,32 @@ deleteBtn.addEventListener("click", function() {
 
 
 
-// chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-//     if (changeInfo.status === "complete") {
-//         checkTabUrl(tab.url);
-//     }
-// });
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status === "complete") {
+        checkTabUrl(tab.url);
+    }
+});
 
+chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    if (tabs.length > 0) {
+        checkTabUrl(tabs[0].url);
+    }
+});
 
-// chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-//     if (tabs.length > 0) {
-//         checkTabUrl(tabs[0].url);
-//     }
-// });
+const green = 'green.png'; 
+const red = 'red.png';
 
-// const green = 'green.png'; 
-// const red = 'red.png';
+function checkTabUrl(url) {
+    const statusContainer = document.getElementById('urlfound');
 
-// function checkTabUrl(url) {
+    if (url.includes("https://www.linkedin.com/jobs/view")) {
+        renderImageInContainer(green, statusContainer);
+    } else {
+        renderImageInContainer(red, statusContainer);
+    }
+}
 
-//     if (url.includes("youtube.com")) {
-//         renderTextOnScreen(green);
-//     } else {
-//         renderTextOnScreen(red);
-//     }
-// }
+function renderImageInContainer(imagePath, container) {
+    container.innerHTML = `<img src="${imagePath}" alt="Status Image" width='20px' height='20px' />`;
+}
 
-// function renderTextOnScreen(imagePath) {
-//     document.body.innerHTML = `<img src="${imagePath}" alt="Status Image" width='50px' height='50px' />`;
-
-// }
