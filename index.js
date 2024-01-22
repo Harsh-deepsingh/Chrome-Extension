@@ -99,9 +99,9 @@ function render(leads) {
                     <div class="list1">
                     <li>
                         <div class='${itemClass}'>
-                            
-                            <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                            <div class='linklogo'> 
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                                 </div>   
                             
                         </div>
@@ -127,7 +127,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                            
                         </div>
@@ -153,7 +154,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                            
                         </div>
@@ -180,7 +182,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                            
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                             
                         </div>
@@ -207,7 +210,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                             
                         </div>
@@ -234,7 +238,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                            
                         </div>
@@ -261,7 +266,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                             
                         </div>
@@ -288,7 +294,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                            
                         </div>
@@ -315,7 +322,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                             
                         </div>
@@ -342,7 +350,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                           
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                            
                         </div>
@@ -369,7 +378,8 @@ function render(leads) {
                         <div class='${itemClass}'>
                             
                             <div class='linklogo'>
-                                <img src='icon.jpg' alt='Icon' width='50' height='50'>
+                                <img src='./images/icon.jpg' alt='Icon' width='50' height='50'>
+                                <input type="checkbox" id='check'>
                             </div>    
                             
                         </div>
@@ -395,7 +405,7 @@ function render(leads) {
                 //     <li>
                 //         <div class='${itemClass}'>
                 //             <a target='_blank' href='${myLeads}'>
-                //                 <img src='${i === 1 ? leads[i] : 'icon.jpg'}' alt='Icon' width='50' height='50'>
+                //                 <img src='${i === 1 ? leads[i] : './images/icon.jpg'}' alt='Icon' width='50' height='50'>
                 //             </a>
                 //         </div>
                 //     </li>
@@ -406,7 +416,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -417,7 +428,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -428,7 +440,9 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/>
+                    </div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -440,7 +454,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -451,7 +466,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -462,7 +478,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -474,7 +491,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -485,7 +503,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -496,7 +515,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -508,7 +528,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -519,7 +540,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -530,7 +552,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -542,7 +565,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -553,7 +577,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -564,7 +589,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -576,7 +602,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -587,7 +614,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -598,7 +626,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -610,7 +639,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -621,7 +651,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -632,7 +663,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -644,7 +676,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -655,7 +688,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -666,7 +700,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -678,7 +713,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -689,7 +725,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -700,7 +737,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -712,7 +750,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -723,7 +762,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -734,7 +774,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -746,7 +787,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Postion*</div>
+                    <div class="temp">Postion*
+                    <img src='./images/position.png' width='15px' height='15px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -757,7 +799,8 @@ function render(leads) {
                 listItems += `
                 <div class='list'>
                 <li>
-                    <div class="temp">Comapany*</div>
+                    <div class="temp">Company*
+                    <img src='./images/company.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -768,7 +811,8 @@ function render(leads) {
                 listItems += `
                 <div class='list2'>
                 <li>
-                    <div class="temp">Applicants*</div>
+                    <div class="temp">Applicants*
+                    <img src='./images/applicants.png' width='20px' height='20px'/></div>
                     <div class='${itemClass}'>
                     <input type="text" value="${leads[i]}" readonly>
                     </div>
@@ -776,193 +820,6 @@ function render(leads) {
                 </div>
             `;   
             }
-
-            // if (i === 8){
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Postion*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 9) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Comapany*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 10) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Job Type*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // } else if (i === 11) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Applicants*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // }
-            // if (i === 14){
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Postion*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 15) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Comapany*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 16) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Job Type*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // } else if (i === 17) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Applicants*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // }
-            // if (i === 20){
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Postion*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 21) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Comapany*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 22) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Job Type*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // } else if (i === 23) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Applicants*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // }
-            // if (i === 26){
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Postion*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 27) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Comapany*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 28) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Job Type*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // } else if (i === 29) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Applicants*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // }
-            // if (i === 32){
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Postion*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 33) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Comapany*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;
-            // } else if (i === 34) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Job Type*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // } else if (i === 35) {
-            //     listItems += `
-            //     <li>
-            //         <div class="temp">Applicants*</div>
-            //         <div class='${itemClass}'>
-            //         <input type="text" value="${leads[i]}" readonly>
-            //         </div>
-            //     </li>
-            // `;   
-            // }
-
         }
     }
     ulEl.innerHTML = listItems;
@@ -987,30 +844,14 @@ deleteBtn.addEventListener("click", function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status === "complete") {
-        checkTabUrl(tab.url);
-    }
-});
-
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs.length > 0) {
         checkTabUrl(tabs[0].url);
     }
 });
 
-const green = 'green.png'; 
-const red = 'red.png';
+const green = './images/green.png'; 
+const red = './images/red.png';
 
 function checkTabUrl(url) {
     const statusContainer = document.getElementById('urlfound');
@@ -1025,4 +866,3 @@ function checkTabUrl(url) {
 function renderImageInContainer(imagePath, container) {
     container.innerHTML = `<img src="${imagePath}" alt="Status Image" width='20px' height='20px' />`;
 }
-

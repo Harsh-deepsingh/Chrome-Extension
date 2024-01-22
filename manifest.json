@@ -1,11 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "Extension",
+    "name": "Vanilla Job Tracker",
     "version": "1.0",
     "permissions": ["activeTab","storage","scripting"],
     "host_permissions": ["http://*/*", "https://*/*"],
     "action": {
-      "default_popup": "index.html"
+      "default_popup": "index.html",
+      "default_icon": "logo.png"
     }
   }
   
